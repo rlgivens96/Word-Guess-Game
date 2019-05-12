@@ -4,10 +4,10 @@ var words= ["addams", "morticia", "wednesday", "uncle_fester", "lurch", "pugsley
 var display = [wordSelection];
 var win = wordSelection;
 var output ="";
-var userLetters="";
+var userLetter="";
 
 // This will generate a random word from the length of array 
-var wordSelection = words[Math.floor(Math.random() * words.length)];
+var wordSelection = words[Math.floor(Math.random()*9)];
 
 var setup = function () {
     for (var i=0; i< words.length; i++)
@@ -22,7 +22,7 @@ var setup = function () {
 
 var submit = function() {
     output = "";
-    uderLetter = ("letter").value;
+    userLetter = ("letter").value;
     ("letter").value;
 
     for (var l=0; l< words.length; l++)
