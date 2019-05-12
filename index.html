@@ -5,24 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <script src="game.js"></script>
+    <link rel="stylesheet" src="reset.css">
+    <script src="./assets/javascript/game.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
+    <body background="./assets/images/Addams-Family-Haunted-Mansion-Scenic-Backdrop.jpg">
 
-    <div class="hangman">
-        <div class="guess"></div>
-        <form class="guessForm">
-        <input type="text" class="guessLetter" maxlength="1"  placeholder="Enter a letter . . . &#x23ce;"/> <button type="submit" class="guessButton">Guess</button>
-        </form>  
-        <div class="wrong">
-          <div class="wrongLetters"></div>
-        </div>
-        <div class="message">
-          <h1 class="title"></h1>
-          <p class="text"></p>
-          <button class="restart button">Play Again?</button>
-        </div>
+<div class="container">  
+  <div class="row">
+    <div class="jumbotron" id= "hangman">
+      <h1 class="display-4">Addam's Family Guessing Game</h1>
+      <p class="lead">Play if you dare! Guess letters that you think makes up the word. If your wrong Cousin Itt will come get you!</p>
+      <hr class="my-4">
+      <p>When you have guessed you'll move to the next round... or maybe not...</p>
+      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
       </div>
-      
+  </div>
+</div> 
+  <button type="button" value="PLAY" onclick="play()" class="btn btn-dark"> Mood Music
+    <div class="adio">
+      <audio id="audio" src="./assets/images/The-Addams-Family-Theme-Song.mp3"></audio>
+    </div>
+  </button>
+ 
 </body>
 </html>
